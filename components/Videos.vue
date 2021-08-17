@@ -327,6 +327,9 @@ export default {
     padding: 7.5px;
   }
   .video {
+    &:not(:last-child) {
+      margin-bottom: 0px;
+    }
     flex-basis: calc(50% - 15px);
     margin: 7.5px;
     .video__body {
