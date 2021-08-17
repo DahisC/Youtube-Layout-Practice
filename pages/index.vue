@@ -36,8 +36,5 @@ img {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-  menu {
-    margin-top: auto;
-  }
 }
 </style>
