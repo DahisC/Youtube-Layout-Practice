@@ -1,7 +1,34 @@
 <template>
-  <Tutorial/>
+  <div>
+    <Header />
+    <main>
+      <Videos />
+    </main>
+    <Menu />
+  </div>
 </template>
 
-<script>
-export default {}
-</script>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+  font-family: Roboto, Arial, sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  max-height: 100%;
+}
+
+.custom-button {
+  border: none;
+  background: transparent;
+}
+</style>
