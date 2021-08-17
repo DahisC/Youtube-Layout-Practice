@@ -8,4 +8,4 @@
 - RWD (PC, Laptop, Tablet, Mobile)
 - Using [Normalize.css](https://necolas.github.io/normalize.css/) to fix cross-browser bugs
 - Cross-browser tested
-- Using debounce func for scroll event
+- Using debounce for scroll event
