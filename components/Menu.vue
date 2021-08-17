@@ -22,7 +22,7 @@
 <style scoped lang="scss">
 menu {
   height: 48px;
-  margin: 0;
+  margin: auto 0 0;
   padding: 0;
   border-top: 1px solid lightgray;
   display: flex;
