@@ -228,14 +228,14 @@ export default {
       return count
     },
     createdAt(date) {
-      const hour = 60 * 1000,
+      const hour = 60 * 60 * 1000,
         day = 24 * 60 * 60 * 1000,
         week = day * 7,
         month = day * 30,
         year = month * 12,
-        dateInMidleseconds = Date.parse(date),
+        dateInMileseconds = Date.parse(date),
         now = Date.parse(new Date()),
-        difference = now - dateInMidleseconds
+        difference = now - dateInMileseconds
 
       if (difference > year) return Math.floor(difference / year) + ' 年'
       if (difference > month) return Math.floor(difference / month) + ' 個月'
