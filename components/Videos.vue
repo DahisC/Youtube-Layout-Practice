@@ -25,7 +25,9 @@
             <div class="video__detail">
               <span class="video__author-name">{{ video.author.name }}</span>
               •
-              <span class="video__views">{{ video.views | views }} views</span>
+              <span class="video__views"
+                >{{ video.views | views }} 觀看次數</span
+              >
               •
               <span class="video__created-at"
                 >{{ video.createdAt | createdAt }} 前</span
