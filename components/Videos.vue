@@ -9,7 +9,7 @@
         <div class="video__header">
           <a
             class="video__preview-image"
-            href=""
+            href="#"
             :style="{ backgroundImage: `url(${video.media.previewImage})` }"
           >
             <!-- <img :src="video.media.previewImage" alt="" /> -->
@@ -267,9 +267,10 @@ export default {
     .video__preview-image {
       display: block;
       width: 100%;
-      padding-bottom: 75%; // forcing 4:3 aspect ratio
+      padding-bottom: 56.25%; // forcing 16:9 aspect ratio
       background-size: cover;
       background-repeat: no-repeat;
+      background-position: center center;
       img {
         width: 100%;
         height: 100%;
