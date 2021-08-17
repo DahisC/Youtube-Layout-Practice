@@ -32,6 +32,10 @@ export default {
 </script>
 
 <style scoped lang="scss">
+// * {
+//   scrollbar-width: none; /* Firefox */
+// }
+
 .tags__wrapper {
   --light-gray: rgba(0, 0, 0, 0.1);
   height: 48px;
@@ -41,10 +45,11 @@ export default {
   align-items: center;
   border-bottom: 1px solid var(--light-gray);
   overflow-x: auto;
+  /* Hide scrollbar for Chrome, Firefox, Safari and Opera */
+  scrollbar-width: none; /* Firefox */
   &::-webkit-scrollbar {
-    display: none; /* Hide scrollbar for Chrome, Safari and Opera */
+    display: none; /* Chrome */
     -ms-overflow-style: none; /* IE and Edge */
-    scrollbar-width: none; /* Firefox */
   }
   > .tag {
     font-size: 1.4rem;
