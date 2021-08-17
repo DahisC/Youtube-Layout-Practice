@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="home">
     <Header />
     <main>
       <Videos />
@@ -8,7 +8,7 @@
   </div>
 </template>
 
-<style>
+<style lang="scss">
 * {
   box-sizing: border-box;
 }
@@ -30,5 +30,17 @@ img {
 .custom-button {
   border: none;
   background: transparent;
+}
+
+.home {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  main {
+    min-height: calc(100% - 144px);
+  }
+  menu {
+    margin-top: auto;
+  }
 }
 </style>
